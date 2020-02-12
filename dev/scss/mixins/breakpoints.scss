@@ -1,0 +1,32 @@
+// variables SASS para media queries
+$mobile: 360px;
+$tablet: 361px;
+$laptod: 1024px;
+$desktop: 1400px;
+@mixin mobile {
+    // Media Querie
+    @media screen and (max-width: $mobile) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    // Media Querie
+    @media screen and (min-width: $tablet) {
+        @content;
+    }
+}
+
+@mixin laptod {
+    // Media Querie
+    @media screen and (min-width: $laptod) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    // Media Querie
+    @media screen and (max-width: $desktop) {
+        @content;
+    }
+}
