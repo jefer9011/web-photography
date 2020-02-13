@@ -3,6 +3,6 @@ nav#main-nav.main-nav
         each page, index in pages
             li.main-menu__item
                 if index==0
-                    a(href='/')= page
+                    a(href='/').main-menu__link= page
                 else
-                    a(href= `/${page}.html`)= page
+                    a(href= `/${page}.html`).main-menu__link= page

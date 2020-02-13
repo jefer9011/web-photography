@@ -4,13 +4,14 @@
     justify-content: space-between;
     width: 100vw;
     position: fixed;
-    top: -10px;
-    color: whitesmoke;
+    top: -7px;
+    color: $text-color;
     left: 50%;
     transform: translateX(-50%);
     height: 60px;
-    //background-color: indigo;
+    background-color: $dark-color-2;
     padding-left: 70px;
+    z-index: 100;
     &__icon {
         width: 90px;
         display: flex;

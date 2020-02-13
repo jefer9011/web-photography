@@ -1,0 +1,21 @@
+// Variables CSS
+:root {
+    --primary-color: #176BEF;
+    --secondary-color: #179c52;
+    --danger-color: #ff3e30;
+    --cta-color: #f7b529;
+    --dark-color: #343434;
+    --dark-color-2: #666;
+    --background-color: #222;
+    --text-color: #eee;
+}
+
+//Variables SASS
+$primary-color: var(--primary-color);
+$secondary-color: var(--secondary-color);
+$danger-color: var(--danger-color);
+$cta-color: var(--cta-color);
+$dark-color: var(--dark-color);
+$dark-color-2: var(--dark-color-2);
+$background-color: var(--background-color);
+$text-color: var(--text-color);

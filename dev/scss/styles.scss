@@ -1,10 +1,16 @@
+// Configuracion guias de estilos
+@import 'config/fonts.scss';
+@import 'config/colors.scss';
+//Mixins
 @import 'mixins/breakpoints.scss';
 @import 'mixins/reset-list.scss';
+//Estilos base
 @import 'base/normalize.scss';
 @import 'base/base.scss';
+//Bloques 
 @import 'blocks/_header.scss';
 @import 'blocks/_topbar.scss';
-@import 'blocks/_aside.scss';
+@import 'blocks/_sidebar.scss';
 @import 'blocks/_main.scss';
 @import 'blocks/_toggle-menu.scss';
 @import 'blocks/_menu.scss';
