@@ -1,0 +1,6 @@
+.main-menu {
+    @include reset-list;
+    margin-top: 1rem;
+    //@include: 1px solid #333;
+    background-color: #666;
+}

@@ -1,8 +1,11 @@
 .header {
     padding: 1em 0;
+    background-color: #666;
     @include laptod {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         padding: 1em 0;
-        background-color: royalblue;
         grid-column: 2 / -1;
         grid-row: 1 / 2;
     }

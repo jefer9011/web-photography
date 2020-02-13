@@ -1,6 +1,11 @@
 @import 'mixins/breakpoints.scss';
+@import 'mixins/reset-list.scss';
 @import 'base/normalize.scss';
 @import 'base/base.scss';
-@import 'blocks/header.scss';
-@import 'blocks/aside.scss';
-@import 'blocks/main.scss';
+@import 'blocks/_header.scss';
+@import 'blocks/_topbar.scss';
+@import 'blocks/_aside.scss';
+@import 'blocks/_main.scss';
+@import 'blocks/_toggle-menu.scss';
+@import 'blocks/_menu.scss';
+@import 'blocks/_logo.scss';

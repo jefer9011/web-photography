@@ -1,7 +1,8 @@
 .sidebar {
     @include laptod {
-        background-color: salmon;
+        background-color: #343434;
         grid-column: 1 / 2;
         grid-row: 1 / -1;
+        top: 0;
     }
 }

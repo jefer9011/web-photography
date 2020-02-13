@@ -1,0 +1,33 @@
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    position: fixed;
+    top: -10px;
+    color: whitesmoke;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 60px;
+    //background-color: indigo;
+    padding-left: 70px;
+    &__icon {
+        width: 90px;
+        display: flex;
+        justify-content: space-around;
+    }
+    @include laptod {
+        height: 70px;
+        left: 100%;
+        padding-top: 10px;
+        width: 35vw; // vw viewport width lo disponible en %
+        justify-content: space-evenly;
+        transform: translateX(-100%);
+        background-color: transparent;
+    }
+}
+
+@include desktop {
+    width: 25vw;
+    background-color: transparent;
+}
