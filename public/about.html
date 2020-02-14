@@ -10,9 +10,9 @@
   </head>
   <body>
     <header class="header" id="header"></header><a class="logo" href="/"><img src="./assets/img/logo.png" alt="Logo-Web"/><a class="logo" href="/"></a>
-      <div class="topbar">
-        <div class="topbar__icon"><i class="fa fa-user"></i><span>   Login</span></div>
-        <div class="topbar__icon"><i class="fa fa-user-plus"></i><span>   Register</span></div>
+      <div class="topbar" id="topbar">
+        <div class="topbar__icon" data-type="login"><i class="fa fa-user"></i><span>   Login</span></div>
+        <div class="topbar__icon" data-type="register"><i class="fa fa-user-plus"></i><span>   Register</span></div>
         <div class="toggle-menu">
           <div class="toggle-menu" id="toggle-menu">
             <div class="toggle-menu__icon" id="toggle-menu__icon"></div><i class="fa fa-bars"></i>
@@ -31,7 +31,63 @@
         </ul>
       </nav>
     </div>
-    <main class="main"></main>
+    <main class="main">
+      <h1 class="title">¡Conócenos!</h1>
+      <div class="about">
+        <div class="about__img show"><img src="assets/img/about.jpg" alt="About Image 1"/></div>
+        <div class="about__text show">
+          <h2>Title 1</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident laborum at fugiat voluptate nisi quos iusto aperiam esse repellat, ab iure neque aspernatur temporibus illum nam itaque perspiciatis voluptatem. Saepe!</p>
+        </div>
+        <div class="about__img"><img src="assets/img/about2.jpg" alt="About Image 2"/></div>
+        <div class="about__text">
+          <h2>Title 2</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident laborum at fugiat voluptate nisi quos iusto aperiam esse repellat, ab iure neque aspernatur temporibus illum nam itaque perspiciatis voluptatem. Saepe!</p>
+        </div>
+        <div class="about__img"><img src="assets/img/about.jpg" alt="About Image 3"/></div>
+        <div class="about__text">
+          <h2>Title 3</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos iusto aperiam esse repellat, ab iure neque aspernatur temporibus illum nam itaque perspiciatis voluptatem. Saepe!</p>
+        </div>
+      </div>
+      <div class="controls"><i class="fa fa-chevron-circle-left" id="prev"></i><i class="fa fa-chevron-circle-right" id="next"></i></div>
+    </main>
+    <div class="lightbox" id="login-modal">
+      <form class="form" id="login-form">
+        <div class="form__field">
+          <label class="form__label" for="login-email">Email</label>
+          <input class="form__input" type="email" name="email" id="login-email"/>
+        </div>
+        <div class="form__field">
+          <label class="form__label" for="login-password">Password</label>
+          <input class="form__input" type="password" name="password" id="login-password"/>
+        </div>
+        <div class="form__field">
+          <input class="form__submit" type="submit" name="button" value="Send"/>
+        </div>
+      </form>
+    </div>
+    <div class="lightbox" id="register-modal">
+      <form class="form" id="register-form">
+        <div class="form__field">
+          <label class="form__label" for="register-name">Nombre</label>
+          <input class="form__input" type="text" name="name" id="register-name"/>
+          <div class="form__field"></div>
+          <label class="form__label" for="register-email">Correo</label>
+          <input class="form__input" type="email" name="email" id="register-email"/>
+        </div>
+        <div class="form__field">
+          <label class="form__label" for="register-password">Contraseña</label>
+          <input class="form__input" type="password" name="password" id="register-password"/>
+          <div class="form__field"></div>
+          <label class="form__label" for="register-password-2">Repita Contraseña</label>
+          <input class="form__input" type="password" name="password" id="register-password-2"/>
+        </div>
+        <div class="form__field">
+          <input class="form__submit" type="submit" name="button" value="Send"/>
+        </div>
+      </form>
+    </div>
     <script src="js/scripts-min.js"></script>
   </body>
 </html>

@@ -16,11 +16,11 @@ html(lang="en")
         a(href="/").logo
             img(src="./assets/img/logo.png", alt="Logo-Web")
             a(href="/").logo
-            .topbar
-                .topbar__icon
+            #topbar.topbar
+                .topbar__icon(data-type="login")
                     i.fa.fa-user
                     span    Login
-                .topbar__icon
+                .topbar__icon(data-type="register")
                     i.fa.fa-user-plus
                     span    Register
                 
@@ -30,9 +30,13 @@ html(lang="en")
                         #toggle-menu__icon.toggle-menu__icon
                         i.fa.fa-bars
                         
-                   
-
         #sidebar.sidebar
             block menu
         main.main
+            block title
+            block main
+
+        include ../includes/login-modal
+        include ../includes/register-modal
+        block scripts
         script(src="js/scripts-min.js")

@@ -1,0 +1,19 @@
+.lightbox {
+    // ventana modal login
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(#000, 0.7);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    transition: transform 0.3s;
+    //Modificador para ocultar ventana modal
+    &--show {
+        transform: scale(1);
+    }
+}
