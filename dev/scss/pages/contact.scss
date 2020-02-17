@@ -1,0 +1,9 @@
+.contact {
+    background-color: $dark-color;
+    height: 90vh;
+    text-align: center;
+    @include laptod {
+        height: calc(100vh -250px);
+        position: relative;
+    }
+}

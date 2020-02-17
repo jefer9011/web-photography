@@ -142,6 +142,10 @@ body { background-color: var(--background-color); color: var(--text-color); min-
 
 @media screen and (min-width: 1024px) { .main { grid-column: 2 / 3; grid-row: 2 / 3; padding: 0 2rem; } }
 
+img { transition: all .3s linear; border-radius: 5px; z-index: 100000; }
+
+img:hover { transform: scale(0.8); transition: all .1s linear; cursor: pointer; }
+
 .lightbox { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); z-index: 1000; display: flex; justify-content: center; align-items: center; transform: scale(0); transition: transform 0.3s; }
 
 .lightbox--show { transform: scale(1); }
@@ -180,6 +184,16 @@ body { background-color: var(--background-color); color: var(--text-color); min-
 
 .form__submit:active, .form__submit:focus { transform: scale(0.9); }
 
+.form-contact { display: grid; gap: 30px; width: 320px; margin: 0 auto; justify-items: center; padding-top: 2rem; }
+
+@media screen and (min-width: 1024px) { .form-contact { grid-template-columns: repeat(2, 1fr); margin: 0 auto 2rem; width: 50%; } }
+
+.form-contact__fields { display: flex; flex-direction: column; height: 150px; justify-content: space-between; width: 100%; }
+
+.form-contact__input, .form-contact__textarea { height: 40px; background-color: var(--dark-color); color: var(--text-color); border: 1px solid; outline: none; padding-left: 0.5rem; }
+
+.form-contact__textarea { resize: none; width: 320px; height: 150px; padding: 0.5rem; margin-bottom: 0.5rem; }
+
 .title { padding: 0 0 0 .5 rem; border-bottom: 1px solid var(--text-color); text-align: left; }
 
 @media screen and (min-width: 1024px) { .title { padding: .5rem 0; border-top: 1px solid var(--text-color); } }
@@ -197,3 +211,7 @@ body { background-color: var(--background-color); color: var(--text-color); min-
 .show { opacity: 1; }
 
 .controls { width: 50%; margin: 0 auto; font-size: 2rem; display: flex; justify-content: space-between; color: var(--text-color); }
+
+.contact { background-color: var(--dark-color); height: 90vh; text-align: center; }
+
+@media screen and (min-width: 1024px) { .contact { height: calc(100vh -250px); position: relative; } }

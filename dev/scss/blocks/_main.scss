@@ -6,3 +6,16 @@
         padding: 0 2rem;
     }
 }
+
+// gallery__item = div.class.img
+img {
+    transition: all .3s linear;
+    border-radius: 5px;
+    z-index: 100000;
+}
+
+img:hover {
+    transform: scale(.8);
+    transition: all .1s linear;
+    cursor: pointer;
+}
